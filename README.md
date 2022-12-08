@@ -24,3 +24,7 @@ Add project direcrtory to system PATH environment:
 5. click the “New” button to add the copied path, press “CTRL+V” to paste the directory path, and click the “OK” button:
 ![Environment Variables](./images/Edit%20environment%20variable.png)
 
+## How to use
+
+
+
