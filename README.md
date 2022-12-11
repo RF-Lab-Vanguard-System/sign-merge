@@ -26,5 +26,21 @@ Add project direcrtory to system PATH environment:
 
 ## How to use
 
+### Sign tests
 
+1. Save a scrinshots of test in path with format:
+>PO#######/PN########/SN-#######
+
+2. Open path from file explorer:
+![Environment Variables](./images/Open%20path.png)
+1 - PO; 2 - PN; 3 - SN.
+
+3. Press Shift and right click mouse. Select “Open PowerShell window here”:
+![Environment Variables](./images/Start-Command-line.png)
+4. Type **ss** and press **Enter**:
+![Environment Variables](./images/Windows%20PowerShell.png)
+5. After the script print: “All images signed.”:
+![Environment Variables](./images/Windows%20PowerShell%20complete.png)
+Your screenshots in folder signed:
+![Environment Variables](./images/Signed-test.png)
 
