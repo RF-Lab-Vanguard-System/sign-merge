@@ -28,7 +28,7 @@ Add project direcrtory to system PATH environment:
 
 ### Sign tests
 
-1. Save a scrinshots of test in path with format:
+1. Save scrinshots of test in path with format:
 >PO#######/PN########/SN-#######
 
 2. Open path from file explorer:
@@ -43,4 +43,13 @@ Add project direcrtory to system PATH environment:
 ![Environment Variables](./images/Windows%20PowerShell%20complete.png)
 Your screenshots in folder signed:
 ![Environment Variables](./images/Signed-test.png)
+
+#### Restore unsigned files
+
+Type **ss -r** and press **Enter**. Directory "source" must exist.
+
+All __*.png__ files from "source" directory will moved to current folder.
+
+### Merge tests with 2 channels
+
 
