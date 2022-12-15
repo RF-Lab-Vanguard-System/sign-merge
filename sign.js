@@ -63,7 +63,18 @@ const createSign = function (file) {
     context.fillText(text, width / 2, 20)
 
     loadImage(file).then(image => {
-        fs.copyFile(file, './' + source + '/' + file, (err) => {
+        let currentFileName = '' + file
+        if (fs.existsSync('./' + source + '/' + currentFileName)) {
+            let addNumber = 1
+            while (fs.existsSync('./' + source + '/' + currentFileName)) {
+                currentFileName = file.replace(
+                    path.extname(file), 
+                    '(' + addNumber++ + ')' + path.extname(file)
+                )
+                console.log(currentFileName)
+            }
+        }
+        fs.copyFile(file, './' + source + '/' + currentFileName, (err) => {
             if (err) {
                 console.log(
                     '\x1b[31m', 

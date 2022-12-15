@@ -22,8 +22,15 @@ const checkFile = (file) => {
 const restore = (file) => {
     try {
         fs.renameSync(restorePath + '\\' + file, currentPath + '\\' + file)
-        console.log('Restore ' + restorePath + '\\' + file + 
-        ' to ' + currentPath + '\\' + file)
+        console.log(            
+            'Restore file',
+            '\x1b[32m', 
+            restorePath + '\\' + file,
+            '\x1b[0m',
+            'to ',
+            '\x1b[32m', 
+            currentPath + '\\' + file,
+            '\x1b[0m')
     } catch (err) {
         console.log('Error move file ' + file, err)
     }
