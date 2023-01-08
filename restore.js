@@ -26,7 +26,8 @@ const restore = (file) => {
             'Restore file',
             '\x1b[32m', 
             restorePath + '\\' + file,
-            '\x1b[0m',
+            '\x1b[0m')
+        console.log(
             'to ',
             '\x1b[32m', 
             currentPath + '\\' + file,

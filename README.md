@@ -1,6 +1,5 @@
 # Sign & Merge
 
-
 #### Make sign for all .png files in directory.
 #### Merge files __*-ch1.png__ and __*-ch2.png__ to one with both markers list.
 ***
@@ -50,6 +49,8 @@ Type **ss -r** and press **Enter**. Directory "source" must exist.
 
 All __*.png__ files from "source" directory will moved to current folder.
 
+![Environment Variables](./images/restore.png)
+
 ### Merge tests with 2 channels
 
-
+Merge files __*-ch1.png__ and __*-ch2.png__ to one with both markers list.
