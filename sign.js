@@ -23,7 +23,7 @@ const checkFile = (file) => {
 
 const currentPath = process.argv[2] == '-serial'? 
         process.argv[3] : process.argv[2]
-console.log(currentPath)
+console.log('Start sign.', process.argv[2])
 
 const currentFiles = fs.readdirSync(currentPath)
     .filter(file => checkFile(file))
@@ -79,24 +79,24 @@ const createSign = function (file) {
         }
         fs.copyFile(file, './' + source + '/' + currentFileName, (err) => {
             if (err) {
-                // console.log(
-                //     '\x1b[31m', 
-                //     'Error Found:', err,
-                //     '\x1b[0m',
-                //     'With copy ' + file + ' to <source> folder'
-                // )
+                console.log(
+                    '\x1b[31m', 
+                    'Error Found:', err,
+                    '\x1b[0m',
+                    'With copy ' + file + ' to <source> folder'
+                )
             }
             else {
                 context.drawImage(image, 0, 50, width, height)
                 const buffer = canvas.toBuffer('image/png')
                 fs.writeFileSync(file, buffer)
-                // console.log(
-                //     'Signing file',
-                //     '\x1b[32m', 
-                //     file,
-                //     '\x1b[0m',
-                //     'saved.'
-                // )
+                console.log(
+                    'Signing file',
+                    '\x1b[32m', 
+                    file,
+                    '\x1b[0m',
+                    'saved.'
+                )
             }
           })
         

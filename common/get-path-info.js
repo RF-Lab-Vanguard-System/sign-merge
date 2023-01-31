@@ -1,5 +1,5 @@
 const getPathInfo = () => {
-    console.log(process.argv)
+    //console.log(process.argv)
     let arg, len;
     if (process.argv[2] == '-serial') {
         arg = process.argv[3].split('\\')
